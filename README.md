@@ -1,4 +1,4 @@
-# DHT22 Readings for Raspberry Pi
+# DHT22 Metrics Server for Raspberry Pi
 
 A simple HTTP server that can be used to fetch the temperature (C) and humidity (%) from a DHT22 sensor attached to a
 Raspberry Pi and expose them as Prometheus metrics.
@@ -12,8 +12,8 @@ To run natively:
 Alternatively, run using Docker:
 
 ```
-docker build -f dht22-pi-readings:latest .
-docker run --rm -p 8000:8000 --privileged dht22-pi-readings:latest
+docker build -f dht22-metrics-server:latest .
+docker run --rm -p 8000:8000 --privileged dht22-metrics-server:latest
 ```
 
 Credit:
